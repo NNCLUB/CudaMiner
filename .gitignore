@@ -6,6 +6,7 @@ compat/jansson/.deps/
 *~
 *.swp
 stamp-h1
+aclocal.m4
 Makefile.in
 cpuminer-config.h.in
 Makefile

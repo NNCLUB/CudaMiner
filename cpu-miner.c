@@ -1712,13 +1712,13 @@ int main(int argc, char *argv[])
 	int i;
 
 	// CB
-	printf("\t   *** CudaMiner for nVidia GPUs by Christian Buchner ***\n");
-	printf("\t             This is version "PROGRAM_VERSION" (beta)\n");
-	printf("\tbased on pooler-cpuminer 2.3.2 (c) 2010 Jeff Garzik, 2012 pooler\n");
-	printf("\t    Cuda additions Copyright 2013,2014 Christian Buchner\n");
-	printf("\t  LTC donation address: LKS1WDKGED647msBQfLBHV3Ls8sveGncnm\n");
-	printf("\t  BTC donation address: 16hJF5mceSojnTD3ZTUDqdRhDyPJzoRakM\n");
-	printf("\t  YAC donation address: Y87sptDEcpLkLeAuex6qZioDbvy1qXZEj4\n");
+	printf("   *** CudaMiner for nVidia GPUs by Christian Buchner ***\n");
+	printf("             This is version "PROGRAM_VERSION" (beta)\n");
+	printf("based on pooler-cpuminer 2.3.2 (c) 2010 Jeff Garzik, 2012 pooler\n");
+	printf("    Cuda additions Copyright 2013,2014 Christian Buchner\n");
+	printf("  LTC donation address: LKS1WDKGED647msBQfLBHV3Ls8sveGncnm\n");
+	printf("  BTC donation address: 16hJF5mceSojnTD3ZTUDqdRhDyPJzoRakM\n");
+	printf("  YAC donation address: Y87sptDEcpLkLeAuex6qZioDbvy1qXZEj4\n");
 
 	for(int thr_id = 0; thr_id < MAX_DEVICES; thr_id++)
     {
@@ -1820,7 +1820,7 @@ int main(int argc, char *argv[])
 
 #ifdef HAVE_SYSLOG_H
 	if (use_syslog)
-		openlog("cpuminer", LOG_PID, LOG_USER);
+		openlog("cudaminer", LOG_PID, LOG_USER);
 #endif
 
 	work_restart = (struct work_restart *)calloc(opt_n_threads, sizeof(*work_restart));
